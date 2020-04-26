@@ -1,0 +1,92 @@
+.product{
+    width: 100%;
+}
+.product_wrapper{
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+}
+.product__info{
+    width: 474px;
+    padding: 234px 0px 152px;
+}
+
+
+.product__text-color{
+    color: #282835;
+}
+.product__subtitle{
+    font-size: 16px;
+}
+.product__title{
+    margin-top: 7px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #282835;
+}
+.product__text{
+    margin-top: 20px;
+    font-size: 40px;
+}
+.product__option{
+    margin-top: 11px;
+    font-size: 16px;
+}
+.product__button-box{
+    margin-top: 14px;
+}
+.product__price-box{
+    margin-top: 47px;
+    display: flex;
+}
+.product__price{
+    margin-right: 43px;
+    font-size: 40px;
+    color: #000000;
+}
+.product__price-box button{
+    padding: 11px 48px;
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    background: #000000;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+}
+.product__footnote{
+    margin-top: 12px;
+    font-size: 13px;
+    color: #000000;
+    opacity: 0.52;
+}
+.product__picture-box{
+    width: 755px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.product__picture{
+    position: absolute;
+}
+.point{
+    margin-top: 614px;
+    z-index: 1;
+}
+.point li{
+    display: inline;
+    margin-right: 15px;
+}
+.point button{
+    width: 10px;
+    height: 10px;
+    background: #d1d1d1;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.slick-aktiv button{
+    background: #000000;
+}
