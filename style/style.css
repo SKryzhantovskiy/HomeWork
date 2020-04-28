@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    padding: 60px;
+}
+.wrapper{
+    margin: 0px auto;
+    max-width: 640px;
+}
+.tabs{
+    margin-top: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: #000000;
+}
+h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: #5d5d5d;
+}
+p{
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #5d5d5d;
+}
+img{
+    display: block;
+    margin: 30px auto;
+}
+.tab{
+    position: relative;
+}
+input{
+    display: none;
+}
+label{
+    display: block;
+    position: relative;
+    font-size: 13px;
+    color: #000000;
+    padding: 15px 0px 16px 35px;
+    background: #f5f5f5;
+    border: 1px solid #e8e8e8;
+}
+section{
+    display: none;
+    padding: 20px;
+}
+input:checked + label + section{
+    display: block;
+}
+.tab::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    left: -10px;
+    top: 10px; bottom: 10px;
+    background: #0179ff;
+}
+/* Здесь ни как не могу добиться, чтобы работало
+input:checked + .tab::before{
+    width: 2px;
+    left: -10px;
+    top: 10px; bottom: 0px;
+    background: #0179ff;
+} */
+label::before{
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 6px;
+    height: 10px;
+    background: url(../img/Shape.svg);
+}
+input:checked + label::before{
+    width: 10px;
+    height: 6px;
+    background: url(../img/Shape2.svg);
+}
+@media all and (max-width: 320px){
+    .container{
+        padding: 30px 0px;
+    }
+    .wrapper{
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+    }
+    img{
+        width: 100%;
+    }
+}
