@@ -26,15 +26,23 @@ h3{
     font-weight: bold;
     color: #5d5d5d;
 }
-p{
+.item{
     margin-top: 10px;
+}
+.item p:not(:first-child){
+    margin-top: 20px;
+}
+.item p{
     font-size: 13px;
     line-height: 20px;
     color: #5d5d5d;
 }
-img{
-    display: block;
+.picture{
     margin: 30px auto;
+}
+img{
+    width: 100%;
+    height: auto;
 }
 .tab{
     position: relative;
@@ -66,27 +74,19 @@ input:checked + label + section{
     top: 10px; bottom: 10px;
     background: #0179ff;
 }
-/* Здесь ни как не могу добиться, чтобы работало
-input:checked + .tab::before{
-    width: 2px;
-    left: -10px;
-    top: 10px; bottom: 0px;
-    background: #0179ff;
-} */
 label::before{
     content: "";
     position: absolute;
     left: 20px;
-    top: 50%;
-    transform: translate(0%, -50%);
-    width: 6px;
-    height: 10px;
-    background: url(../img/Shape.svg);
+    top: 18px;
+    border-top: 2px solid rgba(0, 0, 0, 0.65);
+    border-right: 2px solid rgba(0, 0, 0, 0.65);
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
 }
 input:checked + label::before{
-    width: 10px;
-    height: 6px;
-    background: url(../img/Shape2.svg);
+    transform: rotate(135deg);
 }
 @media all and (max-width: 320px){
     .container{
@@ -97,8 +97,5 @@ input:checked + label::before{
     }
     h1{
         text-align: center;
-    }
-    img{
-        width: 100%;
     }
 }
