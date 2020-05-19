@@ -1,0 +1,50 @@
+/*Крыжантовский Станислав*/
+
+div{
+    margin: 0 auto;
+    max-width: 916px;
+    font-family: serif;
+    font-weight: 400;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+p{
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+}
+h2{
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+img{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+table{
+    width: 100%;
+    margin-bottom: 20px;
+}
+td{
+    padding: 10px;
+    font-size: 17px;
+    color: #000000;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 20px;
+}
+.conclusion h2{
+    margin-bottom: 0;
+}
+.conclusion p{
+    margin-top: 0;
+}
