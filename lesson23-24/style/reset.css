@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+.container{
+    height: 100vh;
+    background: radial-gradient(#73ace6, #303336);
+}
+/* navigation */
+.nav{
+    position: fixed;
+    max-width: 1440px;
+    width: 100%;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(158, 156, 149, .3);
+}
+.home-page{
+    width: 25px;
+    height: 25px;
+}
+.home-page img{
+    width: 100%;
+    height: auto;
+}
+.nav-links ul{
+    list-style: none;
+}
+.nav-links li{
+    display: inline;
+}
+.nav-links li:not(:first-child){
+    margin-left: 40px;
+}
+.nav-links a{
+    text-transform: capitalize;
+    font-size: 25px;
+    color: rgba(97, 168, 212, 1);
+}
+
+
+.content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register{
+    padding: 5px 10px;
+}
+.register input,
+.register button{
+    height: 40px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #ffffff;
+}
+.register button{
+    cursor: pointer;
+}
+.register input::placeholder{
+    color: #ffffff;
+}

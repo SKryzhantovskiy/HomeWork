@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+.wrapper{
+    height: 100vh;
+    background-image: url(../img/Mars\ wallpaper.jpg);
+    display: flex;
+    flex-direction: column;
+}
+.range{
+    padding-top: 50px;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+.range input{
+    width: 50%;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    opacity: 0;
+}
+.content ul{
+    list-style: none;
+}
+.content li{
+    padding: 30px 40px;
+    border-radius: 30px;
+    display: inline;
+    background-color: rgba(84, 81, 81, .4);
+    box-shadow: 0 0 20px aqua;
+}
+.content li:not(:first-child){
+    margin-left: 50px;
+}
+.content a{
+    text-transform: capitalize;
+    font-size: 30px;
+    color: rgba(20, 224, 224, 1);;
+}
