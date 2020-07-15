@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+       
+        <section class="container">
+            <!-- nav -->
+            <nav class="nav">
+                <div class="nav-links">
+                    <div class="burger"><img src="img/BurgerMenu.svg" alt=""></div>
+                    <div class="logo"><a href="#"><img src="img/domo-kun-logo.png" alt="logo"></a></div>
+                    <div class="nav-link">
+                        <ul>
+                            <li><a href="#" class="selected">Models</a></li>
+                            <li><a href="#">Dimensions</a></li>
+                            <li><a href="#">Facts & Figures</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-search">
+                    <form action="/search/">
+                        <button><img src="img/search icon.svg" alt=""></button>
+                        <input type="search" placeholder="Search for details…">
+                    </form>
+                    
+                </div>
+            </nav>
+            
+            <!-- article -->
+            <article>
+                <div class="main-content">
+                    <h1>Honda<br>Sport<br>CRF 450RX </h1>
+                    <div class="article-link">
+                        <div class="watch">
+                            <div class="watch-icon"><img src="img/Icon-Shape.svg" alt=""></div>
+                            <p>Watch film</p>
+                        </div>
+                        <div class="book">
+                            <div class="book-icon"><img src="img/bookmark.svg" alt=""></div>
+                            <p>Bookmark for later</p>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <div class="Manufacturer">
+                            <h2>Manufacturer</h2>
+                            <p>Honda</p>
+                        </div>
+                        <div class="Production">
+                            <h2>Production</h2>
+                            <p>2019</p>
+                        </div>
+                        <div class="Engine">
+                            <h2>Engine</h2>
+                            <p>0.45 L PGM-FI</p>
+                        </div>
+                        <div class="Reviews">
+                            <h2>Reviews</h2>
+                            <img src="img/star-red.svg" alt="star">
+                            <img src="img/star-red.svg" alt="star">
+                            <img src="img/star-red.svg" alt="star">
+                            <img src="img/star-red.svg" alt="star">
+                            <img src="img/star.svg" alt="star">
+                            <span>4.0/5</span>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+        </section>
+
+
+        <!-- news -->
+        <section class="news">
+            <div class="news-entry">Sign up for our email newsletter and get the latest our company news.<br>Get free trial for 3 month.</div>
+            <form action="/posturl/newsletter" method="POST">
+                <div class="news-wrapper">
+                    <div class="registry">
+                        <div class="name form-inp">
+                            <div class="img"><img src="img/name.svg" alt=""></div>                      
+                            <input type="text" name="news" pattern="[A-Za-z]{2,30}" placeholder="Name" required>
+                        </div>
+                        <div class="email form-inp">
+                            <div class="img"><img src="img/e-mail.svg" alt=""></div>                        
+                            <input type="email" name="news" placeholder="E-Mail" required>
+                        </div>
+                    </div>
+                        <div class="news-button form-inp">
+                            <input class="button" type="submit" value="get started for free" name="news">
+                        </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- foot -->
+        <footer>
+            <nav>
+                <div class="foot__nav">
+                    <ul>
+                        <li><a href="#">Cars</a></li>
+                        <li><a href="#">Motorcycles</a></li>
+                        <li><a href="#">Engines</a></li>
+                        <li><a href="#">Water moto technology</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="copyright"><sup>&#169</sup>2020, &ltBeeInterns /&gt</div>
+        </footer>
+    </div>
+    
+</body>
+</html>
